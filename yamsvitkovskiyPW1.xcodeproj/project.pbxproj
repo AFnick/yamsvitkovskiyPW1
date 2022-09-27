@@ -13,6 +13,7 @@
 		7E11A6C028D63DD9000F630C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E11A6BE28D63DD9000F630C /* Main.storyboard */; };
 		7E11A6C228D63DDC000F630C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E11A6C128D63DDC000F630C /* Assets.xcassets */; };
 		7E11A6C528D63DDC000F630C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E11A6C328D63DDC000F630C /* LaunchScreen.storyboard */; };
+		7E7DE76F28E20E19008D7BA4 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 7E7DE76E28E20E19008D7BA4 /* OrderedCollections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7DE76F28E20E19008D7BA4 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = yamsvitkovskiyPW1;
+			packageProductDependencies = (
+				7E7DE76E28E20E19008D7BA4 /* OrderedCollections */,
+			);
 			productName = yamsvitkovskiyPW1;
 			productReference = 7E11A6B528D63DD9000F630C /* yamsvitkovskiyPW1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 7E11A6AC28D63DD9000F630C;
+			packageReferences = (
+				7E7DE76D28E20E19008D7BA4 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 7E11A6B628D63DD9000F630C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E7DE76D28E20E19008D7BA4 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E7DE76E28E20E19008D7BA4 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E7DE76D28E20E19008D7BA4 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E11A6AD28D63DD9000F630C /* Project object */;
 }
